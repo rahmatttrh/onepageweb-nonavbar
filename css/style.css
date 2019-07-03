@@ -1,0 +1,272 @@
+body {
+	font: 15px/1.5 Arial, Helvetica, san-sherif;
+	padding: 0;
+	margin: 0;
+	background-color: white;
+}
+
+
+
+/*GLOBAL*/
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.btn {
+	height: 38px;
+	background: royalblue;
+	color: #fff;
+	border: none;
+	padding-right: 20px;
+	padding-left: 20px;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 4px;
+}
+.container2 {
+	width: 50%;
+	margin: auto;
+}
+
+
+
+/*HEADER*/
+header {
+	background: #35424a;
+	color: white;
+	padding-top: 10px;
+
+	height: 50px;
+	border-bottom: dodgerblue 5px solid;
+	position: fixed;
+	width: 100%;
+}
+header #branding {
+	float: left;
+}
+header #branding h1 {
+	margin: 0;
+}
+header .hightlight {
+	color: dodgerblue;
+	font-weight: bold;
+}
+
+
+
+/*HERO IMAGE*/
+#hero {
+	text-align: center;
+	color: #ffffff;
+	min-height: 470px;
+	background: url('../img/hero.png') no-repeat;
+	background-size: cover;
+	background-position: 0 -130px;
+	background-attachment: fixed;
+}
+#hero button {
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+#hero .btn:hover{
+	background-color: lightblue;
+}
+#hero h1 {
+	text-shadow: 1px 1px 5px black;
+	padding-top: 80px;
+	font-size: 45px;
+	margin-top: 100px;
+	margin-bottom: 10px
+}
+#hero p {
+	font-size: 16px;
+}
+
+
+
+
+/*BOXES*/
+#services {
+	margin-top: 40px;
+}
+#services .box {
+	float: left;
+	width: 30%;
+	padding:15px;
+	text-align: center;
+}
+#services h1 {
+	text-align: center;
+}
+
+
+
+/*ABOUT*/
+#about {
+	padding-top: 15px;
+	background: #f4f4f4;
+	min-height: 400px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#about ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+#about ul li {
+  border: 1px solid #ddd; 
+  margin-top: -1px; 
+  background-color: #f6f6f6; 
+  padding: 12px; 
+}
+#about .main {
+	float: left;
+	width: 60%;
+}
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 10px;
+}
+
+
+
+/*PORTFOLIO*/
+#portfolio {
+	margin-top: 40px;
+}
+#portfolio .box {
+	float: left;
+	width: 30%;
+	padding:16px;
+	text-align: center;
+}
+#portfolio h1 {
+	text-align: center;
+}
+#portfolio img {
+	width: 300px;
+}
+
+
+
+/*CONTACT*/
+#contact {
+	background: #f4f4f4;
+	padding-top: 15px;
+	padding-bottom: 100px;
+	margin-top: 60px;
+}
+#contact form h1{
+	text-align: center;
+	margin-top: 40px;
+}
+#contact form input, textarea{
+	padding: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+} 
+#contact form label	{
+}
+#contact form input{
+	padding: 12px 20px;
+}
+#contact .lab {
+	margin-top: 10px;
+}
+
+
+
+/*FOOTER*/
+footer	{
+	padding: 20px;
+	
+	background: royalblue;
+	color: white;
+	text-align: center;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media(max-width: 768px){
+	header #branding {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header {
+		height: 50px;
+		border-bottom: lightskyblue 2px solid;
+	}
+	
+
+	#hero{
+		min-height: 500px;
+	}
+	#hero h1 {
+		font-size: 34px;
+		margin-top: 20px;
+	}
+	#hero p {
+		font-size: 12px;
+	}
+	#hero .btn {
+		font-size: 12px;
+		padding: 8px 12px;	}
+
+	
+	#services {
+		margin-top: -100px;
+	}	
+	#services .container h1 {
+		text-align: center;
+	}
+	#services .box {
+		float: none;
+		width: 100%;
+		padding:15px;
+		text-align: center;
+	}
+
+	
+	#about .main{
+		text-align: center;
+		float: none;
+		width: 100%;
+	}
+	#about #sidebar h1 {
+		text-align: center;
+	}
+	aside#sidebar {
+		float: none;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+
+	#portfolio .box {
+		float: none;
+		width: 100%;
+		padding:16px;
+		text-align: center;
+	}
+	#portfolio h1 {
+		text-align: center;
+	}
+	#portfolio img {
+		width: 300px;
+	}
+
+}
